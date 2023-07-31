@@ -1,0 +1,4 @@
+a{
+    text-decoration: none;
+}
+/* 用link元素引入html文件后，该html文件中所有的a元素将会取消下划线 */
