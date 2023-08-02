@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器的表示方法1：
+         [title]{
+        （为所有的title属性添加这些效果）*/
+        [title]{
+            background-color: skyblue;
+        }
+
+
+        /* 属性选择器的表示方法2：
+        [title=属性名]{
+        （只给这个属性名的标签添加这些效果）
+        } */
+        [title=demo]{
+             font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    
+    <div title="abc">woshidiv元素</div>
+    <div>我也是divyuansu</div>
+    <h1>haha</h1>
+
+    
+    <span title="demo">我是span</span>
+    <strong title="demo">我是strong标签</strong>
+    <!-- 全局属性title在一个html文件中可以存在多个同样的属性名 -->
+</body>
+</html>
