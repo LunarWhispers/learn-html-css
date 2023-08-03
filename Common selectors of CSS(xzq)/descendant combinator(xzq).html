@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选中父级标签中所有的某元素，添加CSS样式 */
+        .zbc span{
+            background-color: #3d2a9d;
+            color: skyblue;
+        }
+    </style>
+
+    <style>
+        /* 只选中父级标签里的一个标签或父级标签里标签的标签，可以用>隔开 */
+        .wasd>div>span{
+           background-color: rgb(0, 153, 161);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="zbc">
+        <span>lalala</span>
+            <p>
+                <span>哈哈哈</span>
+            </p>
+    </div>
+
+
+    <div class="wasd">
+        <span>门口埋没</span>
+            <div>
+                <span>哈哈哈</span>
+            </div>
+    </div>
+
+</body>
+</html>
