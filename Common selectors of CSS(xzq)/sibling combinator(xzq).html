@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果想选中某一个标签的相邻标签。则用加号表示 */
+        .one+div{
+            font-size: 90px;
+        }
+        .one~div{
+            /* 如果想选中某一个标签的所有兄弟，则用~连接 */
+            background-color: #000;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="one">hahaha</div>
+    <div>heiheihei</div>
+    <div>hehehe</div>
+    <div>xixixi</div>
+</body>
+</html>
