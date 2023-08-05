@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果你给父级元素设置了可继承的CSS样式，那么他的子级元素 就会继承此属性。 */
+        div.box{
+            color:aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+
+
+        div.home{
+            border: solid red;/* 不常用，了解即可 */
+        }
+        /* 强制继承某个不能继承的CSS样式，加上inherit即可 */
+
+        .home h1{
+            border: inherit;/* 不常用，了解即可 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>我是div/box的直接子代的h1</h1>
+        <strong>我是div/box的直接子代的strong</strong>
+        <div class="abc">
+            <span>
+                    <span>
+                        我是div/box的间接子代的span
+                    </span>
+            </span>
+        </div>
+    </div>
+
+
+    
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div class="home">
+        <h1>我是div/box的直接子代的h1&nbsp;&nbsp;&nbsp;&nbsp;2</h1>
+        <strong>我是div/box的直接子代的strong&nbsp;&nbsp;&nbsp;&nbsp;2</strong>
+        <div>
+            <span>
+                <p>
+                    <span>
+                        我是div/box的间接子代的span&nbsp;&nbsp;&nbsp;&nbsp;2
+                    </span>
+                </p>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
