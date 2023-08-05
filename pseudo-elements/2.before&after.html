@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 本课非常重要 */
+        .box1::before{
+            content: "abc";
+            background-color: #ff0;
+            color: aqua;
+            font-size: 30px;
+        }
+        .box1::after{
+            content: url(../photo/Snipaste_2023-08-05_14-11-17.png);
+            left: 10px;
+            size: 30px;
+            /* after与before都有一个必不可缺的东西：conten */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1">我是box1的div</div>
+    <div class="box2">我是box2的div</div>
+    <div class="box3">我是box3的div</div>
+
+</body>
+</html>
