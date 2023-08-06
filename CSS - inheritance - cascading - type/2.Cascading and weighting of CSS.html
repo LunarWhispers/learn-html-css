@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS层叠性与选择器的权重</title>
+    <style>
+        .box{
+            color: aqua;
+        }
+        .twe{
+            color: red;
+        }                     /*如果权重相同，那么谁最后一个设置，谁就生效*/
+        .three{
+            color: green;
+        }
+        .one{
+            color: blue;
+        }
+
+
+         /* 10000       1000         100                10                       1           0     */
+        /* 权重级为：!important > 内联样式 > id选择器 > 类选择器，属性选择器，伪类 > 元素选择器，伪元素 > 通配符 */
+
+
+
+        .a{
+            background-color: aqua !important;  /*!important权重最高*/
+        }
+        #aqua{
+            background-color: green;   /*虽然id选择器比类选择器权重高，但是应为类选择器当中的!important，所以类选择器生效*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box one twe three" title="abc">我是box1</div>
+    <div id="aqua" class="a" title="321">我是box2</div>
+
+
+
+</body>
+</html>
