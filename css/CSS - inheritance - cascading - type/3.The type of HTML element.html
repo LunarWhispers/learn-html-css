@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* 浏览器默认的HTML元素特性可以使用display修改(浏览器默认使用元素选择器，除了统配选择器，其他选择器都可以使用) */
+        [title=xixixi]{
+            background-color: #f00;
+        }
+        .abc{
+            background-color: #f0f;
+            display: inline;
+        }
+        /* div默认为块级元素 */
+
+        #hahaha{
+            background-color: #0ff;
+            display: block;
+        }
+        /* span默认为行内元素 */
+    </style>
+</head>
+<body>
+    <div title="xixixi">我是div1</div>
+    <div  class="abc">我是div2</div>
+    <span id="hahaha">我是span元素</span>
+</body>
+</html>
