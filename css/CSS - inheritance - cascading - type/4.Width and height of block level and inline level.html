@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: #0ff;
+            width: 90px;
+            height: 90px;
+        }
+        .hhh{
+            background-color: #f0f;
+            width: 89px;
+            height: 89px;
+            /* 给行内级元素设置宽高没有作用 */
+        }
+        img{
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">我是box1</div>
+    <span class="hhh">我是span元素</span>
+    <img src="https://imgcps.jd.com/img-cubic/creative_server_cie_jdcloud/v2/2000367/100034179054/FocusFullshop/CkNqZnMvdDEvMTA4NDEyLzM4LzI0MTg3LzQyMTM3LzYzNzgzNmEwRTI3YjdiYTI0LzczMzBkYjkyYTViNTZhZDAuanBnEgo5OTktdHlfMF8xMAE474t6WO7fgdT0Ag/cr/s/q.jpg" alt="一张图片">
+    <!--之所以img可以设置宽高，是因为img是一个行内替换元素，并不是行内级元素。 -->
+</body>
+</html>
