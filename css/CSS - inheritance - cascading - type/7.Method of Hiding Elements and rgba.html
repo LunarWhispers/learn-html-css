@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+        display: none;          /* 给display设置none，会使元素内容不占据任何空间,相当与不存在 (影响所有的子元素)*/
+        }
+        .box2{
+        visibility: hidden;    /* 新的CSS属性：visibility。设置hidden可以是文本内容隐藏，但会占据元素应该占的空间，默认为visible，元素是可见的(影响所有的子元素) */
+        background-color: #f0f;         
+        }
+        .box3{
+            opacity:0 ;   /* 设置整个元素的透明度，0~~1的值，可以选小数。(影响所有的子元素) */
+        }
+        .box4{
+            background: rgba(0, 0, 255, 0)/* a ——>alpha,透明度的意思，0~~1的值，可以选小数。(不影响子元素) */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1">我是box1</div>
+    <div class="box2">我是box2</div>
+    <div class="box3">我是box3</div>
+    <div class="box4">我是box4</div>
+
+</body>
+</html>
