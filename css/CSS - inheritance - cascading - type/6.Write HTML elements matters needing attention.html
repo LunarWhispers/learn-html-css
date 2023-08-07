@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 一般情况下，块级、行内块级元素里可以包含任何元素，但p元素不能包含其他块级元素  -->
+    <p>                      
+        hahaha
+        <div>xixixi</div>       
+        heiheihei            
+    </p>
+            <!-- 大错特错！！！！ -->
+
+            <div>
+                <p>
+                    <h1>
+                        <h2>
+                            <i>
+                                hhhhhhhhhhhhhhh
+                            </i>
+                        </h2>
+                    </h1>
+                </p>
+            </div>
+                    <!-- 正确！！！！ -->
+
+
+
+    
+            
+    <!-- 一般情况下，行内级元素里只能包含行内级元素 -->
+    <strong>
+        <span>
+            <a href="#">百度噶了</a>
+        </span>
+    </strong>
+                    <!-- 正确！！！！ -->
+</body>
+</html>
