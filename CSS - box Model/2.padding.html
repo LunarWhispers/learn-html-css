@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            border: 1px solid saddlebrown;
+        }
+
+        .box1{
+            /* 太麻烦，开发一般不用这种 */
+            padding-left: 30px;
+            padding-right: 45px;
+            padding-top: 77px;
+            padding-bottom: 22px;           
+        }
+        .box2{
+            /* 一般只用一个值 */
+            padding: 10px 20px 30px;
+            /* 如果省略left，值会和right一样 */
+        }                               /* padding单独编写是一个缩写属性。此缩写属性是从零点钟方向起，顺时针转动。*/
+        .box3{
+            padding: 10px 20px;   /* 省略left和bottom，left与right的值相等，bottom与top的值相同。*/
+        } 
+        .box4{
+            padding: 10px;/* 内边距都为10px*/
+
+        }
+    </style>                            
+</head>
+<body>
+    <div class="box1">我是div元素1</div>
+    <div class="box2">我是div元素2</div>
+    <div class="box3">我是div元素3</div>
+    <div class="box4">我是div元素4</div>
+    
+
+</body>
+</html>

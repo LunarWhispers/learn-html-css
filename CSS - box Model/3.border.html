@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+        .box{
+            /* border边框宽度 */
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-left-width: 10px;
+            border-right-width: 10px;
+
+            /* border边框颜色 */
+            border-top-color:red ;
+            border-bottom-color: #0f0;
+            border-left-color: #00f;
+            border-right-color: #2c8d9a;
+
+            /* border边框样式 */
+            border-top-style: solid;
+            border-bottom-style: dashed;
+            border-left-style: groove;
+            border-right-style: double;
+
+            /* 不常用此div的设置border方法！！！！！！！！！ */
+        }
+        .box1{
+            border-width: 10px 10px 10px 10px ;             /* 和padding一样。顺序都是从零点钟方向起，顺时针转动。（所有的盒子模型中的属性，都是都是从零点钟方向起，顺时针转动。*/
+            border-color: #f00 #2c8d9a #0f0 #00f;
+
+            border-style: solid double dashed groove;
+
+            /* 也不太常用 */
+        }
+
+        .box3{
+                /* 如果四个属性值相同，则可以设一个值 */
+            border: 10px saddlebrown solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">哈哈哈</div>
+    <div class="box1">嘿嘿嘿</div>
+    
+    <div class="box3">嘻嘻嘻</div>
+</body>
+</html>
