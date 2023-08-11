@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc {
+            height: 200px;
+            width: 200px;
+            background-color: #f00;
+            /* padding-top: 50px; */
+            /* 第一个解决办法：为父元素添加padding-top
+               不过这样的话，会撑大父元素盒子  */
+
+               /* border: 1px solid green ; */
+            /* 第二个解决办法：为父元素添加border
+                    就是不太美观 */
+
+            overflow: auto;
+            /* 第三个解决方法：为父元素添加overflow: auto;，触发BFC */
+        }
+        [title=hhh]{
+            height: 100px;
+            width: 100px;
+            background-color: #00d;
+
+            margin-top: 50px;
+            /* 问题：我本来想让子元素向上离父元素有50px距离，不知为何，父元素却向下了50px，在线求助！！！ */
+        }
+
+        .box {
+            height: auto;
+            width: 200px;
+            background-color: #f00;
+        }
+        .home{
+            height: 100px;
+            width: 100px;
+            background-color: #00d;
+
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="abc">
+        <div title="hhh"></div>
+    </div>
+        <!--  margin-bottom传递与margin-top的解决方法相同，而且 margin-bottom传递有特殊需求：height值必须为auto -->
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="box">
+        <div class="home"></div>
+    </div>
+    <div>哈哈哈哈哈哈哈，天霸动霸tua</div>
+
+</body>
+</html>

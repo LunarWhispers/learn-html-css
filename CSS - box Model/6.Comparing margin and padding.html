@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+        [title=demo]{
+            width: 150px;
+            height: 150px;
+            background-color: #0ff;
+            
+            
+           
+            padding-left: 20px;
+             /* 第二种方法 */
+            /* 弊端有那么亿点点大：会直接撑大整个盒子 */
+            box-sizing: border-box;
+             /* 可以加一个box-sizing: border-box;（反正我也不知道是什么意思） */
+           
+            border: #0ff solid transparent;
+        }
+        #hhh{
+            width: 70px;
+            height: 70px;
+            background-color: #ff0;
+
+            /* margin-left: 20px; */
+            /* 第一种方法 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div title="demo">
+        <div id="hhh"></div>
+    </div>
+    
+    <!-- 如果我想让子元素hhh距离父元素demo的左边20px，可以怎么办？ -->
+
+</body>
+</html>
