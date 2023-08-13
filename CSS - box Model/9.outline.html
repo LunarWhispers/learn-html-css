@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #0f0;
+            margin-left: 30px;
+            margin-top:30px ;
+            /* 如果我想要为这个元素添加一个外轮廓，可以设置outline */
+            /* 此属性与border设置时差不多相同，不过，outline不占据空间 */
+            outline: 20px double #f00;
+
+        }
+        input {
+            margin-top: 100px;
+            /* 当我们tab聚焦a元素或input元素，会有一个外轮廓，所以我们一般会将outline设置为none */
+            outline: none;
+        }
+    </style>
+   
+</head>
+<body>
+    
+    <div class="box"></div>
+    <input type="text">
+</body>
+</html>
