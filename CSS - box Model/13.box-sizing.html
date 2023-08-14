@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            border: green solid 10px;
+            padding: 10px;
+            box-sizing: content-box;
+            /*  content-box：padding，border布置在width和height之外 */
+            /* 用于设置盒子模型的宽高行为 */
+        }
+        .home {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f;
+            border: darkblue solid 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            /* border-box：padding，border布置在width和height之内 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="home"></div>
+
+</body>
+</html>
