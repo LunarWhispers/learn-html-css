@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+.content {
+    width: 250px;
+}
+img {
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+}
+.desc {
+    display: inline-block;
+    margin: 0px 10px 5px 10px;
+    font-weight: 500;
+}
+.AuthorTime {
+    font-size: 5px;
+    margin-left: 10px;
+    color: #9499a0;
+}
