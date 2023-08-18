@@ -1,0 +1,41 @@
+ul,span,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+span {
+    margin: 10px 8px 0 0;
+}
+img {
+    display: inline-block;
+}
+ul,li,.One.Twe.Three {
+    display: inline-block;
+}
+.Four.Five {
+    display: block;
+    color: #999;
+}
+.One {
+    color: #a82e2e
+}
+.Twe {
+    color: #f04142;
+}
+.Three{
+    color:#ff9a03;
+}
+.demo {
+    display: block;
+
+}
+.F {
+    display: block !important;
+}   
+li {
+    margin: 10px 8px 0 0;
+}
+li:hover {
+    color: #f00;
+}
+
