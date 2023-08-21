@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 假设我现在需要设置用户的性别，需要使用input元素，怎么办 -->
+    <!-- 将input元素的type属性改为radio（单选框） -->
+
+    <!-- <label for="man">
+        <input type="radio" id="man">男
+    </label>
+    <label for="woman">
+        <input type="radio" id="woman">女
+    </label> -->
+
+    <!-- 但随后你就会发现，它会多选，总不可能我是双性人吧(。＿ 。） -->
+    <!-- 那怎么办呢？为他们加上name属性，且值相同 -->
+
+    <label for="man">
+        <input type="radio" id="man" name="sex">男
+    </label>
+    <label for="woman">
+        <input type="radio" id="woman" name="sex">女
+    </label>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 假设我现在这里有两个选择的Input -->
+    <div>
+        名称：<input type="text">
+    </div>
+    <div>
+        密码：<input type="password">
+    </div>
+    <!-- 我现在想做一个只要点击文字就可以选中后面输入框的作用，怎么办 -->
+    <!-- 让每一个input元素作为label元素的子元素，并且用全局属性id选中（为input加上id选择器） -->
+    <label for="username">
+        <div>
+            名称：<input id="username" type="text">
+        </div>
+    </label>
+    <label for="password">
+        <div>
+            密码：<input id="password" type="password">
+        </div>
+    </label>
+</body>
+</html>
