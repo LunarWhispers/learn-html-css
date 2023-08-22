@@ -1,0 +1,9 @@
+html, body, a, div, main, span, table, tr, td, strong, ul, ol, li, h1, h2, h3, p, input {
+    list-style: none;
+    border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
