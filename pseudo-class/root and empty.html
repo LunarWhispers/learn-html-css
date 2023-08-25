@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* root代表此html文件中的根元素<html>元素 */
+        :root {
+            color: #999;
+        }
+
+        /* 指空的前面指定类型的元素 */
+        div :empty {
+            font-size: 30px;
+            background-color: #0f0;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div>div的第1</div>
+        <div>div的第2</div>
+        <div>div的第3</div>
+        <div>div的第4</div>
+        <div>div的第5</div>
+        <div></div>
+        <span></span>
+    </div>
+
+</body>
+</html>
