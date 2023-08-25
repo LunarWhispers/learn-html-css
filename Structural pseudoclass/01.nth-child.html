@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父元素中的第一个子元素 */
+        ul > li:nth-child(1) {
+            color: aqua;
+        }
+
+         /*   * n代表自然数
+              * 是从父元素的第0个子元素开始依次加2的所有子元素  */
+        ul > li:nth-child(2n) {
+            color: blue;
+        }
+
+        /*    * n代表自然数
+              * 是从父元素的第1个子元素开始依次加2的所有子元素 */
+        ul > li:nth-child(2n+1){
+            color: #f00;
+        }
+
+        /* 如果想选中从父元素的第3个子元素开始依次加3的所有子元素，可以变换上面的数字  */
+        ul > li:nth-child(3n+3){
+            color: chartreuse !important;
+        }
+
+
+        /* 代表前5个子元素 */
+        div > div:nth-child(-n+5){
+            font-weight: 700;
+            color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    
+<ul>
+    <li>li元素1</li>
+    <li>li元素2</li>
+    <li>li元素3</li>
+    <li>li元素4</li>
+    <li>li元素5</li>
+    <li>li元素6</li>
+    <li>li元素7</li>
+    <li>li元素8</li>
+    <li>li元素9</li>
+</ul>
+
+<div>
+    <div>div元素1</div>
+    <div>div元素2</div>
+    <div>div元素3</div>
+    <div>div元素4</div>
+    <div>div元素5</div>
+    <div>div元素6</div>
+</div>
+
+
+</body>
+</html>
