@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    img {
+        width: 300px;
+        height: 200px;
+    }   
+    .box {
+        /* 一般为子绝父相 */
+        position: relative;
+        background-color: #ff0;
+        width: 50%;
+    }    
+    strong {
+        /* 假设，我想将一个元素固定到父元素的某个位置，该怎么办？ */
+        /* 绝对定位：定位到离此元素"最近的" "定位元素" 的 "祖先元素", 脱离标准流*/
+        position: absolute;
+        right: 0; 
+        top: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <span>我是span元素</span>
+    <strong>我是strong元素</strong>
+    <div>我是div元素</div>
+    <img src="/photo.webp" alt="">
+    </div>
+</body>
+</html>
