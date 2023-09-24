@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+        }
+        .box1{
+            background-color: #f00;
+            top: 10px;
+            left: 10px;
+
+        }
+        .box2{
+            background-color: #0f0;
+            top: 25px;
+            left: 25px;
+            /* 如果我想使一个“定位元素”层叠在另一个元素上面或下面而且向上几个px 怎麽办 */
+            /* z-index */
+            z-index: 1;
+        }
+        .box3{
+            background-color: #00f;
+            top: 40px;
+            left: 40px;
+            z-index: -1;
+            /* z-index: -1;层叠在某个元素下 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="item box1">1</div>
+    <div class="item box2">2</div>
+    <div class="item box3">3</div>
+   
+
+</body>
+</html>
